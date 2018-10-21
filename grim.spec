@@ -8,7 +8,7 @@
 
 Name:           grim
 Version:        0.0.1
-Release:        2.git%{shortcommit}%{?dist}
+Release:        3.git%{shortcommit}%{?dist}
 Summary:        Grab images from a Wayland compositor.
 License:        MIT
 URL:            https://%{provider_prefix}
@@ -24,6 +24,7 @@ BuildRequires:  cairo-devel
 BuildRequires:  wayland-devel
 BuildRequires:  libjpeg-devel
 BuildRequires:  wayland-protocols-devel
+BuildRequires:  scdoc
 
 %description
 %{summary}.
@@ -51,6 +52,9 @@ BuildRequires:  wayland-protocols-devel
 %{_mandir}/man1/grim.1.gz
 
 %changelog
+* Sun Oct 21 2018 Sergey Korolev <korolev.srg@gmail.com> - 0.0.1-3.git97202f2
+- Fix dependency
+
 * Sun Oct 21 2018 Sergey Korolev <korolev.srg@gmail.com> - 0.0.1-2.git97202f2
 - Fix dependency
 
